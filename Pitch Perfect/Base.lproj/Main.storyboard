@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xl8-kF-tm9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xl8-kF-tm9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -125,11 +125,26 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sqh-Az-cLY">
+                                <rect key="frame" x="155.5" y="588" width="64" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HL-nI-VCr" userLabel="Stop Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="HBU-4B-4si"/>
+                                            <constraint firstAttribute="width" constant="64" id="asJ-Y4-EX1"/>
+                                        </constraints>
+                                        <state key="normal" image="Stop"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sqh-Az-cLY" firstAttribute="centerX" secondItem="CSK-mB-iXb" secondAttribute="centerX" id="BO9-nY-z8J"/>
                             <constraint firstItem="2BK-1w-yRc" firstAttribute="leading" secondItem="CSK-mB-iXb" secondAttribute="leadingMargin" id="Ci7-Bd-EpB"/>
                             <constraint firstItem="Lwm-Hx-F82" firstAttribute="top" secondItem="2BK-1w-yRc" secondAttribute="bottom" constant="20" id="F3l-VQ-1kb"/>
+                            <constraint firstItem="Lwm-Hx-F82" firstAttribute="top" secondItem="sqh-Az-cLY" secondAttribute="bottom" constant="15" id="GMJ-JN-Jyp"/>
                             <constraint firstItem="2BK-1w-yRc" firstAttribute="top" secondItem="Ccq-6l-CD9" secondAttribute="bottom" id="IpM-YB-B9u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2BK-1w-yRc" secondAttribute="trailing" id="xiw-mF-ryh"/>
                         </constraints>
