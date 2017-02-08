@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                                 <state key="normal" image="Stop"/>
                                 <connections>
-                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctc-zX-Ekj"/>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRr-13-CuG"/>
                                     <segue destination="H0B-B7-X5x" kind="show" id="ev8-ZN-NBE"/>
                                 </connections>
                             </button>
@@ -61,7 +61,7 @@
                     <connections>
                         <outlet property="recordButton" destination="6cC-yW-yUv" id="nZN-Zp-Gp6"/>
                         <outlet property="recordingLabel" destination="PEn-YS-9B2" id="lwO-bj-ZxT"/>
-                        <outlet property="stopButton" destination="DtP-wk-Bpc" id="y6t-HW-1qe"/>
+                        <outlet property="stopRecordingButton" destination="DtP-wk-Bpc" id="BWU-vQ-8H6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
